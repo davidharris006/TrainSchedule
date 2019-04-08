@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/CSS/main.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./assets/JS/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+
+    <div class="containerhead">
+        <div id="welcometext">Please complete by entering in your trian times.</div>
+    </div>
+    <div class="containerall">
+
+        <div class="traindisplay">
+            <div>
+                <span class="trainheader">Train:</span>
+                <span class="trainheader">Destination</span>
+                <span class="trainheader">Start Time</span>
+                <span class="trainheader">Frequency</span>
+                <span class="trainheader">Next Train</span>
+            </div>
+            <div id="inputdisplay">
+                <!-- Text inputted will go here -->
+            </div>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="nameInput">Train Name</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Train Name">
+            </div>
+            <div class="form-group">
+                <label for="destinationInput">Destination</label>
+                <input type="text" class="form-control" id="destinationInput" placeholder="Destination">
+            </div>
+            <div class="form-group">
+                <label for="starttimeInput">Start Time(Military time)</label>
+                <input type="text" class="form-control" id="starttimeInput" placeholder="HH:mm">
+            </div>
+            <div class="form-group">
+                <label for="frequencyInput">Frequency(Mins)</label>
+                <input type="text" class="form-control" id="frequencyInput" placeholder="Frequency">
+            </div>
+            <button type="submit" id="submit-btn" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    </body>
+
+</html>
